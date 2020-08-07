@@ -2,31 +2,28 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog Post Sentiment Analysis</title>
         
     </head>
 
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+            <h1>Analyze the Sentiment of a Blog Post</h1>
         </header>
 
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.andleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="http://..."> 
+                    <!-- removed onblur="onBlur()" from url input -->
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
+                <strong>Sentiment Analysis:</strong>
                 <div id="results"></div>
             </section>
         </main>

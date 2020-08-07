@@ -1,9 +1,10 @@
-import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { validateUrl } from './js/validateUrl'
+import { displayError } from './js/displayError'
+import { updateView } from './js/updateView'
 
-console.log(checkForName);
 
-alert("I EXIST")
+// alert("I EXIST")
 console.log("CHANGE!!");
 
 import './styles/resets.scss'
@@ -14,6 +15,8 @@ import './styles/header.scss'
 
 
 export {
-    checkForName,
-    handleSubmit
+    handleSubmit,
+    validateUrl,
+    displayError,
+    updateView
 }
